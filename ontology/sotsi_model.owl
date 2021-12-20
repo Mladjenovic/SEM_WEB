@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#"
+     xml:base="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://purl.org/vocab/aiiso/schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna">
+        <owl:imports rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Answer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Answer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#KnowledgeSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#KnowledgeSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Problem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Question -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Question">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Surmise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Surmise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#TestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#TestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna#SotisModel"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
