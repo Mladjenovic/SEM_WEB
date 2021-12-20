@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://purl.org/vocab/aiiso/schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_model">
+        <owl:imports rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Answer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Answer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#KnowledgeSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#KnowledgeSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Problem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Question -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Question">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Surmise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Surmise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#TestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#TestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/untitled-ontology-16#SotisModel"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
