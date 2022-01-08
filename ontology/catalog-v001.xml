@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.org/vocab/aiiso/schema#" uri="file:/C:/Users/cvijetinm/Desktop/core_ontologies/aiiso.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis" uri="aiiso_sotis"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1640031512878" name="http://www.semanticweb.org/cvijetinm/ontologies/2021/11/sotis_pocetna" uri="sotsi_model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1640548178981" name="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model" uri="sotis-model.owl"/>
     </group>
 </catalog>

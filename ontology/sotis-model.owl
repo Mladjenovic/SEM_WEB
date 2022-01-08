@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#"
+     xml:base="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://purl.org/vocab/aiiso/schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model">
+        <owl:imports rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
