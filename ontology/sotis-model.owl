@@ -22,6 +22,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#contains_professors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#contains_professors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -137,6 +157,241 @@
     <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algebra -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algebra">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#tibor-lukic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Compilers -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Compilers">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#gordana-milosavljevic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Databases -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Databases">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Statistics -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Statistics">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#darko-capko"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zarko-zivanov"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#djordje-obradovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#jovanka-pantovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zorica-suvajdzin-rakic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#dragan-ivetic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#goran-sladic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#lidija-comic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#aleksandar-kovacevic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nikola-teslic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#rados-radivojevic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#dragan-ivetic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming">
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#mila-stojakovic"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
