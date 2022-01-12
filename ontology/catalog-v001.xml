@@ -2,6 +2,6 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis" uri="aiiso_sotis"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1641661914167" name="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model" uri="sotis-model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1641999461362" name="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model" uri="sotis-model.owl"/>
     </group>
 </catalog>

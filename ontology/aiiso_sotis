@@ -1,1693 +1,1714 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-	xmlns="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#"
-	xmlns:cc="http://web.resource.org/cc/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xml="http://www.w3.org/XML/1998/namespace"
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:vann="http://purl.org/vocab/vann/"
-	xmlns:terms="http://purl.org/dc/terms/"
-	xmlns:schema="http://purl.org/vocab/aiiso/schema#"
-	xmlns:aiiso_sotis="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#">
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-	<dc:contributor>Chris Wallace</dc:contributor>
-	<dc:contributor>Ian Corns</dc:contributor>
-	<dc:contributor>Sarah Bartlett</dc:contributor>
-	<dc:creator>Nadeem Shabir</dc:creator>
-	<dc:creator>Rob Styles</dc:creator>
-	<dc:date>2008-05-20</dc:date>
-	<dc:identifier>http://purl.org/vocab/aiiso/schema-20080925</dc:identifier>
-	<dc:rights>Copyright © 2008 Talis Information Ltd</dc:rights>
-	<dc:title xml:lang="en">Academic Institution Internal Structure Ontology (AIISO)</dc:title>
-	<terms:hasFormat rdf:resource="http://purl.org/vocab/aiiso/schema-20080925.html"/>
-	<terms:hasFormat rdf:resource="http://purl.org/vocab/aiiso/schema-20080925.rdf"/>
-	<terms:isVersionOf rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<terms:replaces rdf:resource="http://purl.org/vocab/aiiso/schema-20080520"/>
-	<vann:preferredNamespacePrefix>aiiso</vann:preferredNamespacePrefix>
-	<vann:preferredNamespaceUri>http://purl.org/vocab/aiiso/schema#</vann:preferredNamespaceUri>
-	<vann:usageNote rdf:resource="file:/C:/Users/cvijetinm/Downloads/usagenote.html"/>
-	<rdfs:comment xml:lang="en">The Academic Institution Internal Structure Ontology (AIISO) provides classes and properties to describe the internal organizational structure of an academic institution. AIISO is designed to work in partnership with Participation (http://purl.org/vocab/participation/schema), FOAF (http://xmlns.com/foaf/0.1/) and aiiso-roles (http://purl.org/vocab/aiiso-roles/schema) to describe the roles that people play within an institution.</rdfs:comment>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!--  -->
-<!-- ################################################################# -->
-<!-- # -->
-<!-- #    Annotation properties -->
-<!-- # -->
-<!-- ################################################################# -->
-<!--  -->
-<!--  -->
-<!-- http://purl.org/dc/elements/1.1/contributor -->
-
-<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/elements/1.1/creator -->
-
-<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/elements/1.1/date -->
-
-<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/elements/1.1/format -->
-
-<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/elements/1.1/identifier -->
-
-<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/elements/1.1/rights -->
-
-<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/elements/1.1/title -->
-
-<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/terms/hasFormat -->
-
-<rdf:Description rdf:about="http://purl.org/dc/terms/hasFormat">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/terms/isVersionOf -->
-
-<rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/terms/issued -->
-
-<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/terms/replaces -->
-
-<rdf:Description rdf:about="http://purl.org/dc/terms/replaces">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#name -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#name">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Label"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-	<rdfs:domain rdf:resource="_:genid2147483683"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/vann/usageNote -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/vann/usageNote">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://web.resource.org/cc/license -->
-
-<rdf:Description rdf:about="http://web.resource.org/cc/license">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://web.resource.org/cc/permits -->
-
-<rdf:Description rdf:about="http://web.resource.org/cc/permits">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://web.resource.org/cc/requires -->
-
-<rdf:Description rdf:about="http://web.resource.org/cc/requires">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
-
-<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.w3.org/2000/01/rdf-schema#Label -->
-
-<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Label">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
-
-<rdf:Description rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.w3.org/2004/02/skos/core#historyNote -->
-
-<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#historyNote">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-</rdf:Description>
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- ################################################################# -->
-<!-- # -->
-<!-- #    Object Properties -->
-<!-- # -->
-<!-- ################################################################# -->
-<!--  -->
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#knowledgeGrouping -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#knowledgeGrouping">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:nodeID="genid1"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid1">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<owl:unionOf rdf:nodeID="genid3"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid3">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<rdf:rest rdf:nodeID="genid2"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid2">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#knowledgeGrouping">
-	<rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A KnowledgeGrouping may be contained by another KnowledgeGrouping or an organizationalUnit using knowledgeGrouping.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">knowledgeGrouping</rdfs:label>
-	<ns:term_status>Deprecated</ns:term_status>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#organization -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#organization">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<owl:inverseOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-09-25</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A foaf Organization may contain other subsidiary Organizations using organization.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">organization</rdfs:label>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#organizationalUnit -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#organizationalUnit">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#part_of -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#part_of">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-09-25</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A foaf Organization may refer to its parent Organizations using part_of.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">part of</rdfs:label>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#responsibilityOf -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#responsibilityOf">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<owl:inverseOf rdf:resource="http://purl.org/vocab/aiiso/schema#responsibleFor"/>
-	<rdfs:domain rdf:nodeID="genid4"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid4">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<owl:unionOf rdf:nodeID="genid6"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid6">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<rdf:rest rdf:nodeID="genid5"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid5">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#responsibilityOf">
-	<rdfs:range rdf:resource="http://xmlns.com/foaf/spec/Agent"/>
-	<terms:issued>2008-05-20</terms:issued>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">responsibility of</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#responsibleFor -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#responsibleFor">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://xmlns.com/foaf/spec/Agent"/>
-	<rdfs:range rdf:nodeID="genid7"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid7">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<owl:unionOf rdf:nodeID="genid9"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid9">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<rdf:rest rdf:nodeID="genid8"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid8">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#responsibleFor">
-	<terms:issued>2008-09-25</terms:issued>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">responsible for</rdfs:label>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#takes -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#takes">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
-	<rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#teaches -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#teaches">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-</rdf:Description>
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- ################################################################# -->
-<!-- # -->
-<!-- #    Data properties -->
-<!-- # -->
-<!-- ################################################################# -->
-<!--  -->
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#code -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#code">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:nodeID="genid10"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid10">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<owl:unionOf rdf:nodeID="genid12"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid12">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<rdf:rest rdf:nodeID="genid11"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid11">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#code">
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The code used by an Institution to refer to a KnowledgeGrouping or Organization.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">code</rdfs:label>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#description -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#description">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:nodeID="genid13"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid13">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<owl:unionOf rdf:nodeID="genid15"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid15">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<rdf:rest rdf:nodeID="genid14"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid14">
-	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-	<rdf:first rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#description">
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Description of the KnowledgeGrouping or Organization.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">description</rdfs:label>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#name -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#name">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorFullName -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorFullName">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorMail -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorMail">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorURL -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorURL">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectECTS -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectECTS">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectGoal -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectGoal">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectOutcomes -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectOutcomes">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectTitle -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectTitle">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectURL -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectURL">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-</rdf:Description>
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- ################################################################# -->
-<!-- # -->
-<!-- #    Classes -->
-<!-- # -->
-<!-- ################################################################# -->
-<!--  -->
-<!--  -->
-<!-- http://purl.org/dc/dcmitype/Text -->
-
-<rdf:Description rdf:about="http://purl.org/dc/dcmitype/Text">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/dc/terms/IMT -->
-
-<rdf:Description rdf:about="http://purl.org/dc/terms/IMT">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Center -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Center">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Center is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a center.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Center</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#College -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#College">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">College</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Course -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Course">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<owl:equivalentClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Course</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Department -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Department">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Department</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Division -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Division">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Division is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a division.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Division</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Faculty -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Faculty">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Faculty is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a faculty.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Faculty</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Institute -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Institute">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Institute</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Institution -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Institution">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Institution is the upper most level of an academic institution.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Institution</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#KnowledgeGrouping -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials. The more specific subclasses of Subject, Programme, Course and Module are preferred.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">KnowledgeGrouping</rdfs:label>
-	<skos:historyNote></skos:historyNote>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Module -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Module">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Module is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a module.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Module</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Programme -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Programme">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Programme is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a programme.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Programme</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#ResearchGroup -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#ResearchGroup">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Research Group</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#School -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#School">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school. This class refers schools within a higher education institution such as 'Harvard Law School' it does not refer to schools involved in earlier education.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">School</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#Subject -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Subject">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Subject is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a subject.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">Subject</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema#organizationalUnit -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#organizationalUnit">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://web.resource.org/cc/License -->
-
-<rdf:Description rdf:about="http://web.resource.org/cc/License">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://web.resource.org/cc/Work -->
-
-<rdf:Description rdf:about="http://web.resource.org/cc/Work">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Admin -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Admin">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid16"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid16">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer">
-	<rdfs:subClassOf rdf:nodeID="genid17"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid17">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid18"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid18">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace">
-	<rdfs:subClassOf rdf:nodeID="genid19"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid19">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid20"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid20">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem">
-	<rdfs:subClassOf rdf:nodeID="genid21"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid21">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem">
-	<rdfs:subClassOf rdf:nodeID="genid22"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid22">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem">
-	<rdfs:subClassOf rdf:nodeID="genid23"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid23">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
-	<rdfs:subClassOf rdf:nodeID="genid24"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid24">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#teaches"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor">
-	<rdfs:subClassOf rdf:nodeID="genid25"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid25">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor">
-	<rdfs:subClassOf rdf:nodeID="genid26"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid26">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid27"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid27">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question">
-	<rdfs:subClassOf rdf:nodeID="genid28"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid28">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question">
-	<rdfs:subClassOf rdf:nodeID="genid29"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid29">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid30"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid30">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section">
-	<rdfs:subClassOf rdf:nodeID="genid31"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid31">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
-	<rdfs:subClassOf rdf:nodeID="genid32"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid32">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student">
-	<rdfs:subClassOf rdf:nodeID="genid33"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid33">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid34"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid34">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject">
-	<rdfs:subClassOf rdf:nodeID="genid35"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid35">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject">
-	<rdfs:subClassOf rdf:nodeID="genid36"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid36">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject">
-	<rdfs:subClassOf rdf:nodeID="genid37"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid37">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid38"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid38">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise">
-	<rdfs:subClassOf rdf:nodeID="genid39"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid39">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid40"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid40">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test">
-	<rdfs:subClassOf rdf:nodeID="genid41"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid41">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test">
-	<rdfs:subClassOf rdf:nodeID="genid42"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid42">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test">
-	<rdfs:subClassOf rdf:nodeID="genid43"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid43">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-	<rdfs:subClassOf rdf:nodeID="genid44"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid44">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult">
-	<rdfs:subClassOf rdf:nodeID="genid45"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid45">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult">
-	<rdfs:subClassOf rdf:nodeID="genid46"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid46">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-	<owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-	<owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-	<owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
-</rdf:Description>
-<!--  -->
-<!-- http://xmlns.com/foaf/0.1/Organization -->
-
-<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://xmlns.com/foaf/spec/Agent -->
-
-<rdf:Description rdf:about="http://xmlns.com/foaf/spec/Agent">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- ################################################################# -->
-<!-- # -->
-<!-- #    Individuals -->
-<!-- # -->
-<!-- ################################################################# -->
-<!--  -->
-<!--  -->
-<!-- file:/C:/Users/cvijetinm/Downloads/schema-20080925.rdf -->
-
-<rdf:Description rdf:about="file:/C:/Users/cvijetinm/Downloads/schema-20080925.rdf">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://web.resource.org/cc/Work"/>
-	<cc:license rdf:resource="http://creativecommons.org/licenses/by/2.0/uk/"/>
-</rdf:Description>
-<!--  -->
-<!-- http://creativecommons.org/licenses/by/2.0/uk/ -->
-
-<rdf:Description rdf:about="http://creativecommons.org/licenses/by/2.0/uk/">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://web.resource.org/cc/License"/>
-	<cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
-	<cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
-	<cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
-	<cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
-	<cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema-20080925.html -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema-20080925.html">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
-	<dc:format rdf:nodeID="genid47"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid47">
-	<rdf:type rdf:resource="http://purl.org/dc/terms/IMT"/>
-	<rdf:value>text/html</rdf:value>
-	<rdfs:label xml:lang="en">HTML</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://purl.org/vocab/aiiso/schema-20080925.rdf -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema-20080925.rdf">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
-	<dc:format rdf:nodeID="genid48"/>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="genid48">
-	<rdf:type rdf:resource="http://purl.org/dc/terms/IMT"/>
-	<rdf:value>application/rdf+xml</rdf:value>
-	<rdfs:label xml:lang="en">RDF</rdfs:label>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algebra -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algebra">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>9.0</subjectECTS>
-	<subjectGoal>Enabling students to think abstractly and gain new knowledge in the field of elementary, general, abstract and linear algebra, as well as in the fundamentals of classic combinatorics.</subjectGoal>
-	<subjectOutcomes>Acquired knowledge is used in further education and professional courses. Mathematical models are designed and solved in professional courses using the material from this course.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/n1774631675/algebra</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Compilers -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Compilers">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>Introducing students to the software products lifecycle and to methodologies, standards and tools that support software product throught the whole of its lifecycle or in any of its phases</subjectGoal>
-	<subjectOutcomes>Upon successful completion of the course the student is familiar with various methodologies for software development, as well as standards and tools that support them. The student is also able to select and actively implement optimal methodology and tools for particular software project, as well as to explain this choice.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561599/compilers</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Databases -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Databases">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>4.0</subjectECTS>
-	<subjectGoal>Teaching students parallel programming of parallel computer architectures.</subjectGoal>
-	<subjectOutcomes>Ability to write parallel programs for parallel computer architectures by using parallel programming patterns, models, and tools.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561539/databases</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Statistics -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Statistics">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>The goal of this course is to acquire the necessary knowledge about the SCADA software.</subjectGoal>
-	<subjectOutcomes>Outcomes are the knowledge, skills and abilities necessary for understanding the complexity of SCADA software and solve practical engineering problems.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1743869134/statistics</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#aleksandar-kovacevic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#aleksandar-kovacevic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>kocha78@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/1417834153/aleksandar-kovacevic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>mbranko@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062637049/branko-milosavljevic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>perisic@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062640033/branko-perisic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#darko-capko -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#darko-capko">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>dcapko@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062636279/darko-capko</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#djordje-obradovic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#djordje-obradovic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>obrad@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062637058/djordje-obradovic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#dragan-ivetic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#dragan-ivetic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>ivetic@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062640126/dragan-ivetic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#goran-sladic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#goran-sladic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>sladicg@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/1417832142/goran-sladic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#gordana-milosavljevic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#gordana-milosavljevic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>grist@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062638081/gordana-milosavljevic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>igord@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062635258/igor-dejanovic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#jovanka-pantovic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#jovanka-pantovic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>pantovic@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062642138/jovanka-pantovic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#lidija-comic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#lidija-comic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>comic@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062642103/lidija-comic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#mila-stojakovic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#mila-stojakovic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>mila@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062642135/mila-stojakovic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>minja@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062637114/milan-vidakovic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>miroslav.popovic@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062640029/miroslav-popovic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nan -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nan">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>nan</subjectECTS>
-	<subjectGoal>nan</subjectGoal>
-	<subjectOutcomes>nan</subjectOutcomes>
-	<subjectURL>javascript:showIzborniPredmeti('/n892184493', '#viewPredmetA_00_12_SES001')</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nikola-teslic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nikola-teslic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>nikola.teslic@rt-rk.uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062637180/nikola-teslic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#rados-radivojevic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#rados-radivojevic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>rados@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062642140/rados-radivojevic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#tibor-lukic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#tibor-lukic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>tibor@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062636312/tibor-lukic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zarko-zivanov -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zarko-zivanov">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>zzarko@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062635196/zarko-zivanov</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zorica-suvajdzin-rakic -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zorica-suvajdzin-rakic">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
-	<professorMail>tweety@uns.ac.rs</professorMail>
-	<professorURL>http://ftn.uns.ac.rs/n1062636277/zorica-suvajdzin-rakic</professorURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>7.0</subjectECTS>
-	<subjectGoal>Introduce students to concepts of in-memory data structures and their use in program development.</subjectGoal>
-	<subjectOutcomes>Upon successful course completion, student is familiar with abstract data types and capable of handling linear data structures - arrays, sets, maps, lists, stacks, queues; Student is also familiar  with basic concepts of program efficiency analysis; Student is capable of using search and sort methods on data structures; Student understands the concept of recursiond and its use in program development; Student understands and use hash tables as well as tree structures.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561510/algorithms-and-data-structures</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>4.0</subjectECTS>
-	<subjectGoal>Training students for oral and written professional communication.</subjectGoal>
-	<subjectOutcomes>Ability to communicate professional content in written form in native and English language. Ability to communicate professional content in oral form in native and English language.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/275608994/basics-of-computer-engineering-</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>Computer organisation fundamentals. Architecture, principals and implementations.</subjectGoal>
-	<subjectOutcomes>Introduction to organisation of computers, principles and most important parts. Evaluation of efficiency of computing operations. Classification of architectures and parts.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561537/computer-organisation</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>Basic students' education in the area of file organization, as well as physical data structures implemented at external memory devices. Geting knowledge about development and use of file systems.</subjectGoal>
-	<subjectOutcomes>The acquired knowledge is used in practice and in the Databases course, as well as in future engineering courses. After completing the course, students understand principles of file organization and data management systems.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561536/data-organization</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>7.0</subjectECTS>
-	<subjectGoal>Enabling students to think abstractly and gain new knowledge in the field of classical combinatorial objects, nonclassical combinatorial objects and graph theory.</subjectGoal>
-	<subjectOutcomes>Acquired knowledge is used in further education and professional courses. Mathematical models are designed and solved in professional courses using the material from this course.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561511/discrete-mathematics</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate Thesys -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate Thesys">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>nan</subjectECTS>
-	<subjectGoal>nan</subjectGoal>
-	<subjectOutcomes>nan</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/275845399/graduate-thesys</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>4.0</subjectECTS>
-	<subjectGoal>Introduce students to the principles of compiler, translating concepts (from one programming language to another), the tools for their production and means of implementation. Mastering the compiler making at the beginner level.</subjectGoal>
-	<subjectOutcomes>Upon successful completion of the course students are familiar with the principles of compiler; thez have knowledge of compiling phases, use techniques to translate from one language to another; they are capable of using tools for compiler-generated and real scanners, parsers and simple compilers.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1718386621/human-computer-interaction</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>4.0</subjectECTS>
-	<subjectGoal>Students learn about the theoretical bases and technologies of TCP/IP networks.</subjectGoal>
-	<subjectOutcomes>Understanding basic theory about TCP/IP networks. Gaining practical knowledge necessary for design, implementation and maintenance of local computer networks based on TCP/IP model.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1718386590/internet-networks</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>4.0</subjectECTS>
-	<subjectGoal>Students learn to design and implement basic forms of human computer interaction.</subjectGoal>
-	<subjectOutcomes>The acquired knowledge and skills are the basis for developing software of high utility capacity in the future courses and professional life.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1743893283/internet-software-architectures</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>9.0</subjectECTS>
-	<subjectGoal>Understanding the concepts, elements, and structure of computer programs, and basic algorithms for data processing.</subjectGoal>
-	<subjectOutcomes>Upon successful completion of this course students gain understanding of main computer program concepts and are able to write programs that interact with users; handle different types of data; use basic structural concepts in programming - sequences, selections, and iterations; use subprograms and decompose complex programs; understand elements of software development process; understand elements of algorithm analysis.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561503/introduction-to-programming</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>Training students to apply modern methods, tools and best practices in the software development process.</subjectGoal>
-	<subjectOutcomes>Upon successful completion of the course the student is able to: use modern techniques and tools in software development (integrated environment, editors, compilers, debugers etc.); successfully cooperates in team development of software products using tools for collaboration, control systems versions and systems for tracking requests for changes; writes unit, integration and acceptance tests; understands the benefits of software controlled testing, understands and use basic methdological approaches to software development; writes documentation and uses tools for writing documentation for evolving software.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561534/introduction-to-software-engineering</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>9.0</subjectECTS>
-	<subjectGoal>Enabling students to think abstract and gain basic knowledge in the field of Mathematical analysis (limiting processes, differential and integral calculus, ordinary differential equations).</subjectGoal>
-	<subjectOutcomes>Acquired knowledge is used in further education and student designs and solves mathematical models in professional courses using the knowledge from Mathematical Analysis 1.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1730374868/mathematical-analysis</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</subjectECTS>
-	<subjectGoal>Students gain basic knowledge about numerical analysis, methodology of applying numerical models in engineering disciplines, use of selected standard numerical software tools.</subjectGoal>
-	<subjectOutcomes>Understanding basic numerical models and ability to apply them for solving simple engineering tasks using numerical software tools.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1718386588/numerical-algorithms-and-numerical-software</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2 -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>6.0</subjectECTS>
-	<subjectGoal>Getting familiar with advanced concepts of object oriented approach using C++. Software development by simultaneous utilization of various programming approaches (multi-paradigm programming).</subjectGoal>
-	<subjectOutcomes>After finishing the course the students are familiar with possibilities of C++; they can efficiently utilize the components of standard library; they understand the principles of the object oriented approach; knows the advantages and disadvantages of the programming language, and he can recognize the engagements where it is justified to use C++; he is aware of the language specific support for various programming approaches, and knows the pros and cons for those approaches.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274591299/object-oriented-programming-2</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1 -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>7.0</subjectECTS>
-	<subjectGoal>Make students capable of solving problems in object oriented programming area.</subjectGoal>
-	<subjectOutcomes>Learning methods, technologies and standards for development of object oriented applications. Java programming language is used for this course.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561508/object-oriented-programming-1</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>7.0</subjectECTS>
-	<subjectGoal>Learning basic theoretical knowledge, techniques, tools and recommended practices in the field of software patterns  (Software Patterns). Students learn to detect patterns in the context of the development of complex software products as well as defining the system architecture based on software components.</subjectGoal>
-	<subjectOutcomes>Upon completion of the course students are able to recognize patterns and to understand their advantages and disadvantages in the development of complex software applications. They are also capable, for the task at hand, to select and apply the most appropriate component-based development platform, define system architecture through the decomposition into software components, define their interfaces and do the system implementation.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561596/operating-systems</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>Students gain knowledge about the design and construction of multilevel client/server systems based on distributed object technology.</subjectGoal>
-	<subjectOutcomes>Knowledge about technologies and standards for construction of multilevel client/server systems. Students are competent to design multilevel, distributed software systems based on distributed object technology.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/275605151/oral-and-written-communication-skills</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>6.0</subjectECTS>
-	<subjectGoal>Teaching students design and implementation of real-time system software components with focus on software tools for real time systems.</subjectGoal>
-	<subjectOutcomes>Ability to design and implement real-time system software components, including software tools for real-time systems (assembler, macro assembler, compiler, etc.).</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561597/parallel-programming</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional Practice – Project -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional Practice – Project">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>nan</subjectECTS>
-	<subjectGoal>nan</subjectGoal>
-	<subjectOutcomes>nan</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1730377810/professional-practice---project</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>Basics of digital system design</subjectGoal>
-	<subjectOutcomes>Knowledge about the basic techniques for designing and testing digital systems. The acquired knowledge provides the basis for understanding engineering courses which will follow.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/275103508/scada-software</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>2.0</subjectECTS>
-	<subjectGoal>Enabling engineers to understand social importance and role of technical sciences in the society development, positive and negative implications of technical sciences to the development of society and men, as well as self social importance and responsibility in the creation of human society.</subjectGoal>
-	<subjectOutcomes>Acquisition of social knowledge about features, sources, social functions and creators of technical knowledge; knowledge about the impact of the nature of social systems on technical development and the impact of technique on the society development; knowledge about impact of technique on globalization process, nature destruction and creation of risky society; knowledge about impact of technique on changes of the work contents and work organization forms; knowledge about the impact of the mass media on people’s lives, education, culture and democracy.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1718385539/sociology-of-technique</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>3.0</subjectECTS>
-	<subjectGoal>Students expand their practical knowledge in the field of computing and control engineering</subjectGoal>
-	<subjectOutcomes>The acquired knowledge can be used in solving practical engineering problems.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274561540/software-development-metrodologies</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>8.0</subjectECTS>
-	<subjectGoal>Students learn about efficient and effective modeling and specification of software systems. They gain knowledge and skills necessary for analysis and specification of software requirements. They learn the basics of model based design. They learn about UML specifications.</subjectGoal>
-	<subjectOutcomes>After successfully finishing the course the students have these abilities: analysis of complex systems, specification of requirements according to the system and software and application of UML formalisms with modeling static and dynamic behavior of system and software.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/1718386620/software-specification-and-modeling</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>7.0</subjectECTS>
-	<subjectGoal>Students learn to solve problems in the field of Web programming, which covers knowledge of HTTP protocols, Server and JSP technology as well As organization and architecture of web applications.</subjectGoal>
-	<subjectOutcomes>The acquired knowledge forms the basis for the future engineering courses.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/978721905/software-patterns-and-components</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1 -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>5.0</subjectECTS>
-	<subjectGoal>Introduce students to the concept of an operating system, its basic parts and structure, principles of operation, as well as ways for its implementation.</subjectGoal>
-	<subjectOutcomes>Upon course completion students are familiar with the main parts of the operating system, its working principle and structure. They have appropriate understanding and knowledge of the different types of operating systems and their properties, understanding the meaning of the basic parameters of the operating system, and are able of practical application of the knowledge acquired.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/275608993/system-programming-1</subjectURL>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming -->
-
-<rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-	<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
-	<subjectECTS>6.0</subjectECTS>
-	<subjectGoal>Ability of abstract thinking and acquiring basic knowledge in the area of probability and statistics and stochastic processes</subjectGoal>
-	<subjectOutcomes>Student is competent to design and solve mathematical models in the field of probability and statistics in further education and professional courses.</subjectOutcomes>
-	<subjectURL>http://ftn.uns.ac.rs/274624263/web-programming</subjectURL>
-</rdf:Description>
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- ################################################################# -->
-<!-- # -->
-<!-- #    Annotations -->
-<!-- # -->
-<!-- ################################################################# -->
-<!--  -->
-<!--  -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#name">
-	<ns:term_status>Deprecated</ns:term_status>
-	<skos:historyNote></skos:historyNote>
-	<terms:issued>2008-05-14</terms:issued>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:label xml:lang="en">name</rdfs:label>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated in favour of foaf:name. The name given to a KnowledgeGrouping or Organization.</rdfs:comment>
-</rdf:Description>
-<!--  -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#organizationalUnit">
-	<rdfs:label xml:lang="en">organizational Unit</rdfs:label>
-	<terms:issued>2008-05-14</terms:issued>
-	<skos:historyNote></skos:historyNote>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated due to poor naming, you should use organization and part_of instead. An organizationalUnit may contain other organizationalUnits using organizationalUnit.</rdfs:comment>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organizationalUnit is now deprecated, it was used to describe a group of people that form a part of an organizations institutional hierarchy. More specific classes of Institution, Department, Faculty, School, College, Center, Division and Institute exist were previously subclassed from here. They now subclass foaf:Organization.</rdfs:comment>
-	<rdfs:label xml:lang="en">organizationalUnit</rdfs:label>
-	<ns:term_status>Deprecated</ns:term_status>
-</rdf:Description>
-<!--  -->
-
-<rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#teaches">
-	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization may specify the Knowledge Groupings that it teaches using this property.</rdfs:comment>
-	<rdfs:label xml:lang="en">teaches</rdfs:label>
-	<rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-	<terms:issued>2008-09-25</terms:issued>
-</rdf:Description>
-<!--  -->
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#"
+     xml:base="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://purl.org/vocab/aiiso/schema#"
+     xmlns:aiiso_sotis="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis">
+        <dc:contributor>Chris Wallace</dc:contributor>
+        <dc:contributor>Ian Corns</dc:contributor>
+        <dc:contributor>Sarah Bartlett</dc:contributor>
+        <dc:creator>Nadeem Shabir</dc:creator>
+        <dc:creator>Rob Styles</dc:creator>
+        <dc:date>2008-05-20</dc:date>
+        <dc:identifier>http://purl.org/vocab/aiiso/schema-20080925</dc:identifier>
+        <dc:rights>Copyright © 2008 Talis Information Ltd</dc:rights>
+        <dc:title xml:lang="en">Academic Institution Internal Structure Ontology (AIISO)</dc:title>
+        <terms:hasFormat rdf:resource="http://purl.org/vocab/aiiso/schema-20080925.html"/>
+        <terms:hasFormat rdf:resource="http://purl.org/vocab/aiiso/schema-20080925.rdf"/>
+        <terms:isVersionOf rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <terms:replaces rdf:resource="http://purl.org/vocab/aiiso/schema-20080520"/>
+        <vann:preferredNamespacePrefix>aiiso</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/vocab/aiiso/schema#</vann:preferredNamespaceUri>
+        <vann:usageNote rdf:resource="file:/C:/Users/cvijetinm/Downloads/usagenote.html"/>
+        <rdfs:comment xml:lang="en">The Academic Institution Internal Structure Ontology (AIISO) provides classes and properties to describe the internal organizational structure of an academic institution. AIISO is designed to work in partnership with Participation (http://purl.org/vocab/participation/schema), FOAF (http://xmlns.com/foaf/0.1/) and aiiso-roles (http://purl.org/vocab/aiiso-roles/schema) to describe the roles that people play within an institution.</rdfs:comment>
+        <skos:historyNote></skos:historyNote>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces"/>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/aiiso/schema#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Label"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="_:genid2147483683"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://web.resource.org/cc/license -->
+
+    <owl:AnnotationProperty rdf:about="http://web.resource.org/cc/license"/>
+    
+
+
+    <!-- http://web.resource.org/cc/permits -->
+
+    <owl:AnnotationProperty rdf:about="http://web.resource.org/cc/permits"/>
+    
+
+
+    <!-- http://web.resource.org/cc/requires -->
+
+    <owl:AnnotationProperty rdf:about="http://web.resource.org/cc/requires"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#contains_professors -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#contains_professors"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#Label"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#knowledgeGrouping -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#knowledgeGrouping">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A KnowledgeGrouping may be contained by another KnowledgeGrouping or an organizationalUnit using knowledgeGrouping.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">knowledgeGrouping</rdfs:label>
+        <ns:term_status>Deprecated</ns:term_status>
+        <skos:historyNote></skos:historyNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#organization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#organization">
+        <owl:inverseOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-09-25</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A foaf Organization may contain other subsidiary Organizations using organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <skos:historyNote></skos:historyNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#organizationalUnit -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#organizationalUnit">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#part_of">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-09-25</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A foaf Organization may refer to its parent Organizations using part_of.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <skos:historyNote></skos:historyNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#responsibilityOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#responsibilityOf">
+        <owl:inverseOf rdf:resource="http://purl.org/vocab/aiiso/schema#responsibleFor"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/spec/Agent"/>
+        <terms:issued>2008-05-20</terms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">responsibility of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#responsibleFor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#responsibleFor">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/spec/Agent"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:issued>2008-09-25</terms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">responsible for</rdfs:label>
+        <skos:historyNote></skos:historyNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#takes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#takes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#code -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/vocab/aiiso/schema#code">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The code used by an Institution to refer to a KnowledgeGrouping or Organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">code</rdfs:label>
+        <skos:historyNote></skos:historyNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/vocab/aiiso/schema#description">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Description of the KnowledgeGrouping or Organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <skos:historyNote></skos:historyNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/vocab/aiiso/schema#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorFullName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorMail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorMail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#professorURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectECTS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectECTS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectGoal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectOutcomes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectOutcomes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#subjectURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Text -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Text"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/IMT -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/IMT"/>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Center -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Center">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Center is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a center.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Center</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#College -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#College">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A College is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a college.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">College</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Course -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Course">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Course</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Department -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Department">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Department</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Division -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Division">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Division is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a division.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Division</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Faculty -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Faculty">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Faculty is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a faculty.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Faculty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Institute -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Institute">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Institute is a group of people recognised by an organization as forming a cohesive group referred to by the organization as an institute.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Institute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Institution -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Institution">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Institution is the upper most level of an academic institution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#KnowledgeGrouping -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials. The more specific subclasses of Subject, Programme, Course and Module are preferred.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">KnowledgeGrouping</rdfs:label>
+        <skos:historyNote></skos:historyNote>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Module -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Module">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Module is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a module.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Programme -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Programme">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Programme is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a programme.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Programme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#ResearchGroup -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#ResearchGroup">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Research Group is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a research group.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Research Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#School -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#School">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school. This class refers schools within a higher education institution such as &apos;Harvard Law School&apos; it does not refer to schools involved in earlier education.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">School</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Subject -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Subject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Subject is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a subject.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#organizationalUnit -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#organizationalUnit"/>
+    
+
+
+    <!-- http://web.resource.org/cc/License -->
+
+    <owl:Class rdf:about="http://web.resource.org/cc/License"/>
+    
+
+
+    <!-- http://web.resource.org/cc/Work -->
+
+    <owl:Class rdf:about="http://web.resource.org/cc/Work"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#teaches"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Surmise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#KnowleadgeSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Section"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/spec/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/spec/Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/cvijetinm/Downloads/schema-20080925.rdf -->
+
+    <owl:NamedIndividual rdf:about="file:/C:/Users/cvijetinm/Downloads/schema-20080925.rdf">
+        <rdf:type rdf:resource="http://web.resource.org/cc/Work"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema-20080925.html -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vocab/aiiso/schema-20080925.html">
+        <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+        <dc:format>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://purl.org/dc/terms/IMT"/>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label xml:lang="en">HTML</rdfs:label>
+            </rdf:Description>
+        </dc:format>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema-20080925.rdf -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/vocab/aiiso/schema-20080925.rdf">
+        <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+        <dc:format>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://purl.org/dc/terms/IMT"/>
+                <rdf:value>application/rdf+xml</rdf:value>
+                <rdfs:label xml:lang="en">RDF</rdfs:label>
+            </rdf:Description>
+        </dc:format>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algebra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algebra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>9.0</subjectECTS>
+        <subjectGoal>Enabling students to think abstractly and gain new knowledge in the field of elementary, general, abstract and linear algebra, as well as in the fundamentals of classic combinatorics.</subjectGoal>
+        <subjectOutcomes>Acquired knowledge is used in further education and professional courses. Mathematical models are designed and solved in professional courses using the material from this course.</subjectOutcomes>
+        <subjectTitle>Algebra</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/n1774631675/algebra</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#tibor-lukic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Compilers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Compilers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>Introducing students to the software products lifecycle and to methodologies, standards and tools that support software product throught the whole of its lifecycle or in any of its phases</subjectGoal>
+        <subjectOutcomes>Upon successful completion of the course the student is familiar with various methodologies for software development, as well as standards and tools that support them. The student is also able to select and actively implement optimal methodology and tools for particular software project, as well as to explain this choice.</subjectOutcomes>
+        <subjectTitle>Compilers</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561599/compilers</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#gordana-milosavljevic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Databases -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Databases">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>4.0</subjectECTS>
+        <subjectGoal>Teaching students parallel programming of parallel computer architectures.</subjectGoal>
+        <subjectOutcomes>Ability to write parallel programs for parallel computer architectures by using parallel programming patterns, models, and tools.</subjectOutcomes>
+        <subjectTitle>Databases</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561539/databases</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Statistics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Statistics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>The goal of this course is to acquire the necessary knowledge about the SCADA software.</subjectGoal>
+        <subjectOutcomes>Outcomes are the knowledge, skills and abilities necessary for understanding the complexity of SCADA software and solve practical engineering problems.</subjectOutcomes>
+        <subjectTitle>Statistics</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1743869134/statistics</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#darko-capko"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#aleksandar-kovacevic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#aleksandar-kovacevic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>aleksandar-kovacevic</professorFullName>
+        <professorMail>kocha78@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/1417834153/aleksandar-kovacevic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>branko-milosavljevic</professorFullName>
+        <professorMail>mbranko@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062637049/branko-milosavljevic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>branko-perisic</professorFullName>
+        <professorMail>perisic@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062640033/branko-perisic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#darko-capko -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#darko-capko">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>darko-capko</professorFullName>
+        <professorMail>dcapko@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062636279/darko-capko</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#djordje-obradovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#djordje-obradovic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>djordje-obradovic</professorFullName>
+        <professorMail>obrad@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062637058/djordje-obradovic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#dragan-ivetic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#dragan-ivetic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>dragan-ivetic</professorFullName>
+        <professorMail>ivetic@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062640126/dragan-ivetic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#goran-sladic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#goran-sladic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>goran-sladic</professorFullName>
+        <professorMail>sladicg@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/1417832142/goran-sladic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#gordana-milosavljevic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#gordana-milosavljevic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>gordana-milosavljevic</professorFullName>
+        <professorMail>grist@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062638081/gordana-milosavljevic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>igor-dejanovic</professorFullName>
+        <professorMail>igord@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062635258/igor-dejanovic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#jovanka-pantovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#jovanka-pantovic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>jovanka-pantovic</professorFullName>
+        <professorMail>pantovic@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062642138/jovanka-pantovic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#lidija-comic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#lidija-comic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>lidija-comic</professorFullName>
+        <professorMail>comic@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062642103/lidija-comic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#mila-stojakovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#mila-stojakovic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>mila-stojakovic</professorFullName>
+        <professorMail>mila@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062642135/mila-stojakovic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>milan-vidakovic</professorFullName>
+        <professorMail>minja@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062637114/milan-vidakovic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>miroslav-popovic</professorFullName>
+        <professorMail>miroslav.popovic@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062640029/miroslav-popovic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>nan</professorFullName>
+        <professorMail>nan</professorMail>
+        <professorURL>nan</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nikola-teslic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nikola-teslic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>nikola-teslic</professorFullName>
+        <professorMail>nikola.teslic@rt-rk.uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062637180/nikola-teslic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#rados-radivojevic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#rados-radivojevic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>rados-radivojevic</professorFullName>
+        <professorMail>rados@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062642140/rados-radivojevic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#tibor-lukic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#tibor-lukic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>tibor-lukic</professorFullName>
+        <professorMail>tibor@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062636312/tibor-lukic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zarko-zivanov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zarko-zivanov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>zarko-zivanov</professorFullName>
+        <professorMail>zzarko@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062635196/zarko-zivanov</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zorica-suvajdzin-rakic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zorica-suvajdzin-rakic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Profesor"/>
+        <professorFullName>zorica-suvajdzin-rakic</professorFullName>
+        <professorMail>tweety@uns.ac.rs</professorMail>
+        <professorURL>http://ftn.uns.ac.rs/n1062636277/zorica-suvajdzin-rakic</professorURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>7.0</subjectECTS>
+        <subjectGoal>Introduce students to concepts of in-memory data structures and their use in program development.</subjectGoal>
+        <subjectOutcomes>Upon successful course completion, student is familiar with abstract data types and capable of handling linear data structures - arrays, sets, maps, lists, stacks, queues; Student is also familiar  with basic concepts of program efficiency analysis; Student is capable of using search and sort methods on data structures; Student understands the concept of recursiond and its use in program development; Student understands and use hash tables as well as tree structures.</subjectOutcomes>
+        <subjectTitle>Algorithms and Data structures</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561510/algorithms-and-data-structures</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>4.0</subjectECTS>
+        <subjectGoal>Training students for oral and written professional communication.</subjectGoal>
+        <subjectOutcomes>Ability to communicate professional content in written form in native and English language. Ability to communicate professional content in oral form in native and English language.</subjectOutcomes>
+        <subjectTitle>Basics of computer engineering</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/275608994/basics-of-computer-engineering-</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>Computer organisation fundamentals. Architecture, principals and implementations.</subjectGoal>
+        <subjectOutcomes>Introduction to organisation of computers, principles and most important parts. Evaluation of efficiency of computing operations. Classification of architectures and parts.</subjectOutcomes>
+        <subjectTitle>Computer organisation</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561537/computer-organisation</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zarko-zivanov"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>Basic students&apos; education in the area of file organization, as well as physical data structures implemented at external memory devices. Geting knowledge about development and use of file systems.</subjectGoal>
+        <subjectOutcomes>The acquired knowledge is used in practice and in the Databases course, as well as in future engineering courses. After completing the course, students understand principles of file organization and data management systems.</subjectOutcomes>
+        <subjectTitle>Data Organization</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561536/data-organization</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#djordje-obradovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>7.0</subjectECTS>
+        <subjectGoal>Enabling students to think abstractly and gain new knowledge in the field of classical combinatorial objects, nonclassical combinatorial objects and graph theory.</subjectGoal>
+        <subjectOutcomes>Acquired knowledge is used in further education and professional courses. Mathematical models are designed and solved in professional courses using the material from this course.</subjectOutcomes>
+        <subjectTitle>Discrete Mathematics</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561511/discrete-mathematics</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#jovanka-pantovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate Thesys -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate Thesys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>nan</subjectECTS>
+        <subjectGoal>nan</subjectGoal>
+        <subjectOutcomes>nan</subjectOutcomes>
+        <subjectTitle>Graduate Thesys</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/275845399/graduate-thesys</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>4.0</subjectECTS>
+        <subjectGoal>Introduce students to the principles of compiler, translating concepts (from one programming language to another), the tools for their production and means of implementation. Mastering the compiler making at the beginner level.</subjectGoal>
+        <subjectOutcomes>Upon successful completion of the course students are familiar with the principles of compiler; thez have knowledge of compiling phases, use techniques to translate from one language to another; they are capable of using tools for compiler-generated and real scanners, parsers and simple compilers.</subjectOutcomes>
+        <subjectTitle>Human Computer Interaction</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1718386621/human-computer-interaction</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#zorica-suvajdzin-rakic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>4.0</subjectECTS>
+        <subjectGoal>Students learn about the theoretical bases and technologies of TCP/IP networks.</subjectGoal>
+        <subjectOutcomes>Understanding basic theory about TCP/IP networks. Gaining practical knowledge necessary for design, implementation and maintenance of local computer networks based on TCP/IP model.</subjectOutcomes>
+        <subjectTitle>Internet Networks</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1718386590/internet-networks</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>4.0</subjectECTS>
+        <subjectGoal>Students learn to design and implement basic forms of human computer interaction.</subjectGoal>
+        <subjectOutcomes>The acquired knowledge and skills are the basis for developing software of high utility capacity in the future courses and professional life.</subjectOutcomes>
+        <subjectTitle>Internet Software Architectures</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1743893283/internet-software-architectures</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#dragan-ivetic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>9.0</subjectECTS>
+        <subjectGoal>Understanding the concepts, elements, and structure of computer programs, and basic algorithms for data processing.</subjectGoal>
+        <subjectOutcomes>Upon successful completion of this course students gain understanding of main computer program concepts and are able to write programs that interact with users; handle different types of data; use basic structural concepts in programming - sequences, selections, and iterations; use subprograms and decompose complex programs; understand elements of software development process; understand elements of algorithm analysis.</subjectOutcomes>
+        <subjectTitle>Introduction to Programming</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561503/introduction-to-programming</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#goran-sladic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>Training students to apply modern methods, tools and best practices in the software development process.</subjectGoal>
+        <subjectOutcomes>Upon successful completion of the course the student is able to: use modern techniques and tools in software development (integrated environment, editors, compilers, debugers etc.); successfully cooperates in team development of software products using tools for collaboration, control systems versions and systems for tracking requests for changes; writes unit, integration and acceptance tests; understands the benefits of software controlled testing, understands and use basic methdological approaches to software development; writes documentation and uses tools for writing documentation for evolving software.</subjectOutcomes>
+        <subjectTitle>Introduction to Software Engineering</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561534/introduction-to-software-engineering</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>9.0</subjectECTS>
+        <subjectGoal>Enabling students to think abstract and gain basic knowledge in the field of Mathematical analysis (limiting processes, differential and integral calculus, ordinary differential equations).</subjectGoal>
+        <subjectOutcomes>Acquired knowledge is used in further education and student designs and solves mathematical models in professional courses using the knowledge from Mathematical Analysis 1.</subjectOutcomes>
+        <subjectTitle>Mathematical analysis</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1730374868/mathematical-analysis</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#lidija-comic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>4.0</subjectECTS>
+        <subjectGoal>Students gain basic knowledge about numerical analysis, methodology of applying numerical models in engineering disciplines, use of selected standard numerical software tools.</subjectGoal>
+        <subjectOutcomes>Understanding basic numerical models and ability to apply them for solving simple engineering tasks using numerical software tools.</subjectOutcomes>
+        <subjectTitle>Numerical Algorithms and Numerical Software</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1718386588/numerical-algorithms-and-numerical-software</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#aleksandar-kovacevic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>6.0</subjectECTS>
+        <subjectGoal>Getting familiar with advanced concepts of object oriented approach using C++. Software development by simultaneous utilization of various programming approaches (multi-paradigm programming).</subjectGoal>
+        <subjectOutcomes>After finishing the course the students are familiar with possibilities of C++; they can efficiently utilize the components of standard library; they understand the principles of the object oriented approach; knows the advantages and disadvantages of the programming language, and he can recognize the engagements where it is justified to use C++; he is aware of the language specific support for various programming approaches, and knows the pros and cons for those approaches.</subjectOutcomes>
+        <subjectTitle>Object Oriented Programming 2</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274591299/object-oriented-programming-2</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>7.0</subjectECTS>
+        <subjectGoal>Make students capable of solving problems in object oriented programming area.</subjectGoal>
+        <subjectOutcomes>Learning methods, technologies and standards for development of object oriented applications. Java programming language is used for this course.</subjectOutcomes>
+        <subjectTitle>Object oriented programming 1</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561508/object-oriented-programming-1</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>7.0</subjectECTS>
+        <subjectGoal>Learning basic theoretical knowledge, techniques, tools and recommended practices in the field of software patterns  (Software Patterns)</subjectGoal>
+        <subjectOutcomes>Upon completion of the course students are able to recognize patterns and to understand their advantages and disadvantages in the development of complex software applications. They are also capable, for the task at hand, to select and apply the most appropriate component-based development platform, define system architecture through the decomposition into software components, define their interfaces and do the system implementation.</subjectOutcomes>
+        <subjectTitle>Operating Systems</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561596/operating-systems</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#igor-dejanovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>Students gain knowledge about the design and construction of multilevel client/server systems based on distributed object technology.</subjectGoal>
+        <subjectOutcomes>Knowledge about technologies and standards for construction of multilevel client/server systems. Students are competent to design multilevel, distributed software systems based on distributed object technology.</subjectOutcomes>
+        <subjectTitle>Oral and written communication skills</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/275605151/oral-and-written-communication-skills</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-milosavljevic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>6.0</subjectECTS>
+        <subjectGoal>Teaching students design and implementation of real-time system software components with focus on software tools for real time systems.</subjectGoal>
+        <subjectOutcomes>Ability to design and implement real-time system software components, including software tools for real-time systems (assembler, macro assembler, compiler, etc.).</subjectOutcomes>
+        <subjectTitle>Parallel Programming</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561597/parallel-programming</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional Practice – Project -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional Practice – Project">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>nan</subjectECTS>
+        <subjectGoal>nan</subjectGoal>
+        <subjectOutcomes>nan</subjectOutcomes>
+        <subjectTitle>Professional Practice – Project</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1730377810/professional-practice---project</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>Basics of digital system design</subjectGoal>
+        <subjectOutcomes>Knowledge about the basic techniques for designing and testing digital systems. The acquired knowledge provides the basis for understanding engineering courses which will follow.</subjectOutcomes>
+        <subjectTitle>SCADA Software</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/275103508/scada-software</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nikola-teslic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>2.0</subjectECTS>
+        <subjectGoal>Enabling engineers to understand social importance and role of technical sciences in the society development, positive and negative implications of technical sciences to the development of society and men, as well as self social importance and responsibility in the creation of human society.</subjectGoal>
+        <subjectOutcomes>Acquisition of social knowledge about features, sources, social functions and creators of technical knowledge; knowledge about the impact of the nature of social systems on technical development and the impact of technique on the society development; knowledge about impact of technique on globalization process, nature destruction and creation of risky society; knowledge about impact of technique on changes of the work contents and work organization forms; knowledge about the impact of the mass media on people’s lives, education, culture and democracy.</subjectOutcomes>
+        <subjectTitle>Sociology of Technique</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1718385539/sociology-of-technique</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#rados-radivojevic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>3.0</subjectECTS>
+        <subjectGoal>Students expand their practical knowledge in the field of computing and control engineering</subjectGoal>
+        <subjectOutcomes>The acquired knowledge can be used in solving practical engineering problems.</subjectOutcomes>
+        <subjectTitle>Software Development Metrodologies</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274561540/software-development-metrodologies</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#nan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>8.0</subjectECTS>
+        <subjectGoal>Students learn about efficient and effective modeling and specification of software systems. They gain knowledge and skills necessary for analysis and specification of software requirements. They learn the basics of model based design. They learn about UML specifications.</subjectGoal>
+        <subjectOutcomes>After successfully finishing the course the students have these abilities: analysis of complex systems, specification of requirements according to the system and software and application of UML formalisms with modeling static and dynamic behavior of system and software.</subjectOutcomes>
+        <subjectTitle>Software Specification and Modeling</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/1718386620/software-specification-and-modeling</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#branko-perisic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>7.0</subjectECTS>
+        <subjectGoal>Students learn to solve problems in the field of Web programming, which covers knowledge of HTTP protocols, Server and JSP technology as well As organization and architecture of web applications.</subjectGoal>
+        <subjectOutcomes>The acquired knowledge forms the basis for the future engineering courses.</subjectOutcomes>
+        <subjectTitle>Software patterns and components</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/978721905/software-patterns-and-components</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#milan-vidakovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>5.0</subjectECTS>
+        <subjectGoal>Introduce students to the concept of an operating system, its basic parts and structure, principles of operation, as well as ways for its implementation.</subjectGoal>
+        <subjectOutcomes>Upon course completion students are familiar with the main parts of the operating system, its working principle and structure. They have appropriate understanding and knowledge of the different types of operating systems and their properties, understanding the meaning of the basic parameters of the operating system, and are able of practical application of the knowledge acquired.</subjectOutcomes>
+        <subjectTitle>System Programming 1</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/275608993/system-programming-1</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#miroslav-popovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
+        <subjectECTS>6.0</subjectECTS>
+        <subjectGoal>Ability of abstract thinking and acquiring basic knowledge in the area of probability and statistics and stochastic processes</subjectGoal>
+        <subjectOutcomes>Student is competent to design and solve mathematical models in the field of probability and statistics in further education and professional courses.</subjectOutcomes>
+        <subjectTitle>Web programming</subjectTitle>
+        <subjectURL>http://ftn.uns.ac.rs/274624263/web-programming</subjectURL>
+        <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#mila-stojakovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#name">
+        <ns:term_status>Deprecated</ns:term_status>
+        <skos:historyNote></skos:historyNote>
+        <terms:issued>2008-05-14</terms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated in favour of foaf:name. The name given to a KnowledgeGrouping or Organization.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#organizationalUnit">
+        <rdfs:label xml:lang="en">organizational Unit</rdfs:label>
+        <terms:issued>2008-05-14</terms:issued>
+        <skos:historyNote></skos:historyNote>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated due to poor naming, you should use organization and part_of instead. An organizationalUnit may contain other organizationalUnits using organizationalUnit.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">organizationalUnit</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organizationalUnit is now deprecated, it was used to describe a group of people that form a part of an organizations institutional hierarchy. More specific classes of Institution, Department, Faculty, School, College, Center, Division and Institute exist were previously subclassed from here. They now subclass foaf:Organization.</rdfs:comment>
+        <ns:term_status>Deprecated</ns:term_status>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#teaches">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization may specify the Knowledge Groupings that it teaches using this property.</rdfs:comment>
+        <rdfs:label xml:lang="en">teaches</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <terms:issued>2008-09-25</terms:issued>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-</rdf:RDF>
