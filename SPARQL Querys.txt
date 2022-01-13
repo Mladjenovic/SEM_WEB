@@ -1,0 +1,20 @@
+SPARQL upiti koje smo planirali za semanticki web:
+
+Izlistati profesore koji predaju odredjeni predmet
+Izlistati studente koji pohadjaju odredjeni predmet
+Izlistati predmete na kojima se uci Java programski jezik
+Prikazati sve studente koji su polozili test na datom predmetu
+Prikazati sve studente koji nisu polozili test na datom predmetu
+Prikazati najbolje studente na predmetu
+Prikazati espb za svaki predmetima
+Prikazati nastavni cilj za odredjeni predmet
+Prikazati ocekivani ishod nakon polozenog predmeta
+Prikazati studente koji nisu polozili nijedan test na datom predmetu.
+
+
+Default Data Set name (Graph IRI):
+    http://localhost:8890/DAV/schemas/
+
+    prefix ns: <http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#>
+    select distinct ?subjectTitle
+    where {?x ns:subjectTitle ?subjectTitle}
