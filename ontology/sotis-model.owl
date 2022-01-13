@@ -40,6 +40,152 @@
     
 
 
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_answers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_answers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_question -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_question">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_test -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_test">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_test_result -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#has_test_result">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#answerCorrect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#answerCorrect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#answerText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#answerText">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#questionPoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#questionPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#questionText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#questionText">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#studentFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#studentFullName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testMinPoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testMinPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testResultGrade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testResultGrade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testResultPoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testResultPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#testTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -158,6 +304,305 @@
     <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#SotisModel"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming">
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20JAVA"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20object"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20method%20and%20what%20method%20contains"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20static%20method"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats%20meaning%20garbage%20destructor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics">
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20are%20variables"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20object"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20programming"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats%20meaning%20double"/>
+        <has_question rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Which%20data%20types%20you%20know"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Bela%20Belic -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Bela%20Belic">
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%205"/>
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%206"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Cvijetin%20Mladjenovic -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Cvijetin%20Mladjenovic">
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%203"/>
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%204"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#John%20Snow -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#John%20Snow">
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%201"/>
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%202"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Marija%20Maric -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Marija%20Maric">
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2010"/>
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2011"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mitar%20Miric -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mitar%20Miric">
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2012"/>
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2013"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Petar%20Petrovic -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Petar%20Petrovic">
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2014"/>
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2015"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Stefan%20Trninic -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Stefan%20Trninic">
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%206"/>
+        <has_test_result rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%207"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%201 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%201">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2010 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2010">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2011 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2011">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2012 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2012">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2013 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2013">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2014 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2014">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2015 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%2015">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%202 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%202">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%203 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%203">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%204 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%204">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%205 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%205">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%206 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%206">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%207 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%207">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%208 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%208">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%209 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test%20Result%209">
+        <has_test rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20are%20variables -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20are%20variables">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer1"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20JAVA -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20JAVA">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer2"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer2"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20object -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20object">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer4"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer4"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20programming -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20programming">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer5"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer5"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20method%20and%20what%20method%20contains -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20method%20and%20what%20method%20contains">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer3"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer3"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20static%20method -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What%20is%20static%20method">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer6"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer6"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats%20meaning%20double -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats%20meaning%20double">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer7"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer7"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats%20meaning%20garbage%20destructor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats%20meaning%20garbage%20destructor">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer9"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer9"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Which%20data%20types%20you%20know -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Which%20data%20types%20you%20know">
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer10"/>
+        <has_answers rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer10"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

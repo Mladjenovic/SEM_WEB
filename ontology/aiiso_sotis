@@ -718,12 +718,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -830,12 +824,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#User"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Problem"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
@@ -1310,9 +1298,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms%20and%20Data%20structures -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms and Data structures">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Algorithms%20and%20Data%20structures">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>7.0</subjectECTS>
         <subjectGoal>Introduce students to concepts of in-memory data structures and their use in program development.</subjectGoal>
@@ -1324,9 +1312,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics%20of%20computer%20engineering -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics of computer engineering">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Basics%20of%20computer%20engineering">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>4.0</subjectECTS>
         <subjectGoal>Training students for oral and written professional communication.</subjectGoal>
@@ -1338,9 +1326,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer%20organisation -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer organisation">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Computer%20organisation">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>5.0</subjectECTS>
         <subjectGoal>Computer organisation fundamentals. Architecture, principals and implementations.</subjectGoal>
@@ -1352,9 +1340,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data%20Organization -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data Organization">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Data%20Organization">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>5.0</subjectECTS>
         <subjectGoal>Basic students&apos; education in the area of file organization, as well as physical data structures implemented at external memory devices. Geting knowledge about development and use of file systems.</subjectGoal>
@@ -1366,9 +1354,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete%20Mathematics -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete Mathematics">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Discrete%20Mathematics">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>7.0</subjectECTS>
         <subjectGoal>Enabling students to think abstractly and gain new knowledge in the field of classical combinatorial objects, nonclassical combinatorial objects and graph theory.</subjectGoal>
@@ -1380,9 +1368,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate Thesys -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate%20Thesys -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate Thesys">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Graduate%20Thesys">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>nan</subjectECTS>
         <subjectGoal>nan</subjectGoal>
@@ -1394,9 +1382,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human%20Computer%20Interaction -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human Computer Interaction">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Human%20Computer%20Interaction">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>4.0</subjectECTS>
         <subjectGoal>Introduce students to the principles of compiler, translating concepts (from one programming language to another), the tools for their production and means of implementation. Mastering the compiler making at the beginner level.</subjectGoal>
@@ -1408,9 +1396,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet%20Networks -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Networks">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet%20Networks">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>4.0</subjectECTS>
         <subjectGoal>Students learn about the theoretical bases and technologies of TCP/IP networks.</subjectGoal>
@@ -1422,9 +1410,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet%20Software%20Architectures -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet Software Architectures">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Internet%20Software%20Architectures">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>4.0</subjectECTS>
         <subjectGoal>Students learn to design and implement basic forms of human computer interaction.</subjectGoal>
@@ -1436,9 +1424,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction%20to%20Programming -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Programming">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction%20to%20Programming">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>9.0</subjectECTS>
         <subjectGoal>Understanding the concepts, elements, and structure of computer programs, and basic algorithms for data processing.</subjectGoal>
@@ -1450,9 +1438,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction%20to%20Software%20Engineering -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction to Software Engineering">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Introduction%20to%20Software%20Engineering">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>5.0</subjectECTS>
         <subjectGoal>Training students to apply modern methods, tools and best practices in the software development process.</subjectGoal>
@@ -1464,9 +1452,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical%20analysis -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical analysis">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mathematical%20analysis">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>9.0</subjectECTS>
         <subjectGoal>Enabling students to think abstract and gain basic knowledge in the field of Mathematical analysis (limiting processes, differential and integral calculus, ordinary differential equations).</subjectGoal>
@@ -1478,9 +1466,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical%20Algorithms%20and%20Numerical%20Software -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical Algorithms and Numerical Software">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Numerical%20Algorithms%20and%20Numerical%20Software">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>4.0</subjectECTS>
         <subjectGoal>Students gain basic knowledge about numerical analysis, methodology of applying numerical models in engineering disciplines, use of selected standard numerical software tools.</subjectGoal>
@@ -1492,9 +1480,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2 -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object%20Oriented%20Programming%202 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object Oriented Programming 2">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object%20Oriented%20Programming%202">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>6.0</subjectECTS>
         <subjectGoal>Getting familiar with advanced concepts of object oriented approach using C++. Software development by simultaneous utilization of various programming approaches (multi-paradigm programming).</subjectGoal>
@@ -1506,9 +1494,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1 -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object%20oriented%20programming%201 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object oriented programming 1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Object%20oriented%20programming%201">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>7.0</subjectECTS>
         <subjectGoal>Make students capable of solving problems in object oriented programming area.</subjectGoal>
@@ -1520,9 +1508,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating%20Systems -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating Systems">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Operating%20Systems">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>7.0</subjectECTS>
         <subjectGoal>Learning basic theoretical knowledge, techniques, tools and recommended practices in the field of software patterns  (Software Patterns)</subjectGoal>
@@ -1534,9 +1522,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral%20and%20written%20communication%20skills -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral and written communication skills">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Oral%20and%20written%20communication%20skills">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>5.0</subjectECTS>
         <subjectGoal>Students gain knowledge about the design and construction of multilevel client/server systems based on distributed object technology.</subjectGoal>
@@ -1548,9 +1536,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel%20Programming -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel Programming">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Parallel%20Programming">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>6.0</subjectECTS>
         <subjectGoal>Teaching students design and implementation of real-time system software components with focus on software tools for real time systems.</subjectGoal>
@@ -1562,9 +1550,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional Practice – Project -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional%20Practice%20–%20Project -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional Practice – Project">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Professional%20Practice%20–%20Project">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>nan</subjectECTS>
         <subjectGoal>nan</subjectGoal>
@@ -1576,9 +1564,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA%20Software -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA Software">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#SCADA%20Software">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>5.0</subjectECTS>
         <subjectGoal>Basics of digital system design</subjectGoal>
@@ -1590,9 +1578,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology%20of%20Technique -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology of Technique">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Sociology%20of%20Technique">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>2.0</subjectECTS>
         <subjectGoal>Enabling engineers to understand social importance and role of technical sciences in the society development, positive and negative implications of technical sciences to the development of society and men, as well as self social importance and responsibility in the creation of human society.</subjectGoal>
@@ -1604,9 +1592,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software%20Development%20Metrodologies -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Development Metrodologies">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software%20Development%20Metrodologies">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>3.0</subjectECTS>
         <subjectGoal>Students expand their practical knowledge in the field of computing and control engineering</subjectGoal>
@@ -1618,9 +1606,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software%20Specification%20and%20Modeling -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software Specification and Modeling">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software%20Specification%20and%20Modeling">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>8.0</subjectECTS>
         <subjectGoal>Students learn about efficient and effective modeling and specification of software systems. They gain knowledge and skills necessary for analysis and specification of software requirements. They learn the basics of model based design. They learn about UML specifications.</subjectGoal>
@@ -1632,9 +1620,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software%20patterns%20and%20components -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software patterns and components">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Software%20patterns%20and%20components">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>7.0</subjectECTS>
         <subjectGoal>Students learn to solve problems in the field of Web programming, which covers knowledge of HTTP protocols, Server and JSP technology as well As organization and architecture of web applications.</subjectGoal>
@@ -1646,9 +1634,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1 -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System%20Programming%201 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System Programming 1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#System%20Programming%201">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>5.0</subjectECTS>
         <subjectGoal>Introduce students to the concept of an operating system, its basic parts and structure, principles of operation, as well as ways for its implementation.</subjectGoal>
@@ -1660,9 +1648,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web%20programming -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web programming">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Web%20programming">
         <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Subject"/>
         <subjectECTS>6.0</subjectECTS>
         <subjectGoal>Ability of abstract thinking and acquiring basic knowledge in the area of probability and statistics and stochastic processes</subjectGoal>
@@ -1671,7 +1659,384 @@
         <subjectURL>http://ftn.uns.ac.rs/274624263/web-programming</subjectURL>
         <contains_professors rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#mila-stojakovic"/>
     </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Petar Petrovic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+		<studentID>1</studentID>
+        <studentFullName>Petar Petrovic</studentFullName>
+    </owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Mitar Miric">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+		<studentID>2</studentID>
+		<studentFullName>Mitar Miric</studentFullName>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Stefan Trninic">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+		<studentID>3</studentID>
+		<studentFullName>Stefan Trninic</studentFullName>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Cvijetin Mladjenovic">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+		<studentID>4</studentID>
+		<studentFullName>Cvijetin Mladjenovic</studentFullName>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Marija Maric">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+		<studentID>5</studentID>
+		<studentFullName>Marija Maric</studentFullName>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Bela Belic">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+		<studentID>6</studentID>
+		<studentFullName>Bela Belic</studentFullName>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#John Snow">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Student"/>
+		<studentID>7</studentID>
+		<studentFullName>John Snow</studentFullName>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 1">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>10</testResultGrade>
+		<testResultPoints>99.65</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 2">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>9</testResultGrade>
+		<testResultPoints>89.13</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 3">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>10</testResultGrade>
+		<testResultPoints>95.05</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 4">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>6</testResultGrade>
+		<testResultPoints>58.77</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 5">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>7</testResultGrade>
+		<testResultPoints>72.22</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 6">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>8</testResultGrade>
+		<testResultPoints>81.01</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 7">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>5</testResultGrade>
+		<testResultPoints>42.02</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 8">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>5</testResultGrade>
+		<testResultPoints>39.21</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 9">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>6</testResultGrade>
+		<testResultPoints>55.25</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 10">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>7</testResultGrade>
+		<testResultPoints>69.65</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 11">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>10</testResultGrade>
+		<testResultPoints>95.35</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 12">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>7</testResultGrade>
+		<testResultPoints>71.65</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 13">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>6</testResultGrade>
+		<testResultPoints>58.77</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 14">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>7</testResultGrade>
+		<testResultPoints>72.22</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Test Result 15">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#TestResult"/>
+		<testResultGrade>8</testResultGrade>
+		<testResultPoints>81.01</testResultPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestProgrammingBasics">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+		<testTitle>ProgrammingBasics</testTitle>
+		<testDescription>This test check a basics of programming.</testDescription>
+		<testMinPoints>49.99</testMinPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#TestJavaProgramming">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Test"/>
+		<testTitle>JavaProgramming</testTitle>
+		<testDescription>This test check a basics of JAVA programming language.</testDescription>
+		<testMinPoints>49.99</testMinPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What is programming">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>What is programming</questionText>
+		<questionPoints>2.50</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What are variables">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>What are variables</questionText>
+		<questionPoints>1.50</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Which data types you know">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>Which data types you know</questionText>
+		<questionPoints>3.50</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats meaning double">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>Whats meaning double</questionText>
+		<questionPoints>1.00</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Whats meaning garbage destructor">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>Whats meaning destructor</questionText>
+		<questionPoints>2.00</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+		<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What is JAVA">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>What is JAVA</questionText>
+		<questionPoints>1.00</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What is static method">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>What is static method</questionText>
+		<questionPoints>2.00</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#Explain apstract class">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>Explain apstract class</questionText>
+		<questionPoints>2.00</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What is object">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>What is object</questionText>
+		<questionPoints>1.00</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#What is method and what method contains">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Question"/>
+		<questionText>What is method and what method contains</questionText>
+		<questionPoints>1.00</questionPoints>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer1">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer1</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer2">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer2</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer3">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer3</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer4">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer4</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer5">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer5</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer6">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer6</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer7">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer7</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer8">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer8</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer9">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer9</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#CorrectAnswer10">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>CorrectAnswer10</answerText>
+		<answerCorrect>true</answerCorrect>
+	</owl:NamedIndividual>
     
+    
+		<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer1">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer1</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer2">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer2</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer3">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer3</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer4">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer4</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer5">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer5</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer6">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer6</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer7">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer7</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer8">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer8</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer9">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer9</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#FalseAnsewer10">
+		<rdf:type rdf:resource="http://www.semanticweb.org/stefan/ontologies/2021/11/sotis-model#Answer"/>
+		<answerText>FalseAnsewer10</answerText>
+		<answerCorrect>false</answerCorrect>
+	</owl:NamedIndividual>
 
 
     <!-- 
@@ -1686,24 +2051,24 @@
         <ns:term_status>Deprecated</ns:term_status>
         <skos:historyNote></skos:historyNote>
         <terms:issued>2008-05-14</terms:issued>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
         <rdfs:label xml:lang="en">name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated in favour of foaf:name. The name given to a KnowledgeGrouping or Organization.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#organizationalUnit">
         <rdfs:label xml:lang="en">organizational Unit</rdfs:label>
         <terms:issued>2008-05-14</terms:issued>
         <skos:historyNote></skos:historyNote>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated due to poor naming, you should use organization and part_of instead. An organizationalUnit may contain other organizationalUnits using organizationalUnit.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
-        <rdfs:label xml:lang="en">organizationalUnit</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deprecated due to poor naming, you should use organization and part_of instead. An organizationalUnit may contain other organizationalUnits using organizationalUnit.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organizationalUnit is now deprecated, it was used to describe a group of people that form a part of an organizations institutional hierarchy. More specific classes of Institution, Department, Faculty, School, College, Center, Division and Institute exist were previously subclassed from here. They now subclass foaf:Organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">organizationalUnit</rdfs:label>
         <ns:term_status>Deprecated</ns:term_status>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#teaches">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization may specify the Knowledge Groupings that it teaches using this property.</rdfs:comment>
-        <rdfs:label xml:lang="en">teaches</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <rdfs:label xml:lang="en">teaches</rdfs:label>
         <terms:issued>2008-09-25</terms:issued>
     </rdf:Description>
 </rdf:RDF>
