@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
-function HomeScreen() {
-  const handleQuery1 = () => {
+function Query2() {
+  const handleQuery2 = () => {
     const requestOptions = {
       method: "GET",
+      headers: {
+        "content-type": "application/json",
+      },
     };
 
-    fetch("http://localhost:5000/query/query1", requestOptions)
+    fetch("http://localhost:5000/query/query2", requestOptions)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        document.getElementById("card").innerHTML = data.Query1;
+        document.getElementById("card").innerHTML = data.Query2;
       })
       .catch((err) => console.log(err));
   };
@@ -29,21 +31,23 @@ function HomeScreen() {
             width: "20%",
             boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           }}
-          onClick={handleQuery1}
+          onClick={handleQuery2}
+          size="sm"
         >
-          Execute query 1
+          Execute
         </Button>
 
         <Button
           variant="primary"
           style={{
-            marginLeft: "5px",
             boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           }}
           onClick={handleReset}
+          size="sm"
         >
           Reset
         </Button>
+
         <br />
         <br />
         <br />
@@ -56,16 +60,17 @@ function HomeScreen() {
             width: "50%",
           }}
         >
-          <Card.Title>Description for query one</Card.Title>
-          <Card.Text id="card">
+          <Card.Title>
+            All subject on which Java programming language is tought:
             <br />
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
+            <br />
+            <br />
+          </Card.Title>
+          <Card.Text id="card"></Card.Text>
         </Card.Body>
       </Card>
     </div>
   );
 }
 
-export default HomeScreen;
+export default Query2;

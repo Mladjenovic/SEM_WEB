@@ -20,8 +20,39 @@ api.add_namespace(query_ns)
 
 @query_ns.route('/query1')
 class Query1(Resource):
-    def get(self):
+    def post(self):
+        data = request.get_json()
         
+        professor_name = data['professor_name']
+        print(professor_name)
+        queryString =   "prefix ns: <http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#> select distinct ?x ?contains_professors where { {?x ns:contains_professors  ?contains_professors filter regex(?contains_professors , "+ f"\"{professor_name}\"" + ") } .  }"
+                        
+        sparql = SPARQLWrapper("http://localhost:8890/sparql")
+        sparql.setQuery(queryString)
+        sparql.setReturnFormat(JSON)
+
+        try :
+            results = sparql.query().convert()
+            
+            retval = []
+            for result in results["results"]["bindings"]:
+                print(result.get('x').get('value').split('#')[1])
+                retval.append(result.get('x').get('value').split('#')[1])
+                
+            save_path_file = "query1_output.json"
+            with open(save_path_file, "w") as f:
+                f.write(json.dumps(results)) 
+
+        except Exception as e:
+            print(str(e))
+            
+
+        return jsonify({"Query1" : retval})
+
+        
+@query_ns.route('/query2')
+class Query1(Resource):
+    def get(self):
         queryString =   """     
                             prefix ns: <http://www.semanticweb.org/stefan/ontologies/2021/11/aiiso_sotis#>
                             select distinct ?subjectTitle ?subjectOutcomes ?contains_professors
@@ -31,7 +62,7 @@ class Query1(Resource):
                                 {?x ns:subjectTitle  ?subjectTitle}
                             }
                         """
-                        
+                                
         sparql = SPARQLWrapper("http://localhost:8890/sparql")
         sparql.setQuery(queryString)
         sparql.setReturnFormat(JSON)
@@ -42,7 +73,7 @@ class Query1(Resource):
             for result in results["results"]["bindings"]:
                 print(result.get('subjectOutcomes').get('value'))
                 
-            save_path_file = "query1_output.json"
+            save_path_file = "query2_output.json"
             with open(save_path_file, "w") as f:
                 f.write(json.dumps(results)) 
 
@@ -50,7 +81,7 @@ class Query1(Resource):
             print(str(e))
 
         
-        return jsonify({"Query1": f"{result.get('subjectOutcomes').get('value')} - {result.get('subjectTitle').get('value')} - {result.get('contains_professors').get('value').split('#')[1]}"})
+        return jsonify({"Query2": f"{result.get('subjectTitle').get('value')}"})
 
 
 
